@@ -8,27 +8,16 @@ from google import genai
 from google.genai import types
 
 from ingestion import collection, MODEL, DIMENSIONS
+from universities import university_name
 
 load_dotenv()
 client = genai.Client()
-
-UNIVERSITIES = {"birzeit": "جامعة بيرزيت", "aaup": "الجامعة العربية الأمريكية"}
-
 
 def normalize_ar(value: str) -> str:
     value = unicodedata.normalize("NFKD", value)
     value = "".join(c for c in value if not unicodedata.combining(c))
     value = re.sub("[إأآٱ]", "ا", value)
     return value.replace("ة", "ه").replace("ى", "ي").lower()
-
-
-def university_from_filename(filename: str):
-    name = normalize_ar(filename)
-    if "تعليمات منح درجه البكالوريوس" in name:
-        return "birzeit"
-    if "الامريكيه" in name and "الجامعه" in name:
-        return "aaup"
-    return None
 
 
 def embed_query(question: str):
@@ -57,21 +46,12 @@ def keyword_score(question: str, passage: str) -> float:
 
 
 def retrieve(question: str, university: str, top_k: int = 4):
-    if university not in UNIVERSITIES:
+    if not university_name(university):
         raise ValueError("Unsupported university")
     if not question.strip() or not 1 <= top_k <= 10:
         raise ValueError("Invalid question or top_k")
 
-    # Temporary metadata mapping based on verified filenames already indexed.
-    # This also excludes sample.txt and the hackathon judging guide.
-    all_metadata = collection.get(include=["metadatas"])["metadatas"]
-    hashes = sorted({m["file_hash"] for m in all_metadata
-                     if university_from_filename(m.get("filename", "")) == university
-                     and m.get("file_hash")})
-    if not hashes:
-        return []
-
-    where = {"file_hash": {"$in": hashes}}
+    where = {"university_id": university}
     eligible_count = len(collection.get(where=where, include=[])["ids"])
     if not eligible_count:
         return []

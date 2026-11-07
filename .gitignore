@@ -1,4 +1,4 @@
-﻿# Python
+# Python
 .venv/
 venv/
 __pycache__/
@@ -15,3 +15,5 @@ node_modules/
 
 # ChromaDB
 chroma_db/
+chroma-backup-*/
+/frontend/dist/
