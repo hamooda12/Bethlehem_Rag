@@ -1,0 +1,156 @@
+{
+  "generated_at_utc": "2026-11-07T10:55:49.246353+00:00",
+  "notes": "Source coverage is not Precision@k. Faithfulness and citation accuracy require evidence-based manual review.",
+  "diagnostics": {
+    "source_coverage_at_4": 1.0,
+    "unanswerable_abstention_rate": null,
+    "completed_cases": 2,
+    "total_cases": 12
+  },
+  "results": [
+    {
+      "id": "Q01",
+      "question": "في جامعة بيرزيت، ما الحد الأقصى للساعات في الفصل الدراسي العادي؟",
+      "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": "Q02",
+      "type": "direct",
+      "question": "في جامعة بيرزيت، كيف يُصنّف طالب أنهى 65 ساعة بنجاح؟",
+      "gold_answer": "مستوى سنة ثالثة (60–89 ساعة).",
+      "gold_sources": [
+        "أنظمة وتعليمات"
+      ],
+      "actual_answer": "لا توجد معلومات كافية في المستندات للإجابة عن السؤال.",
+      "retrieved_chunks": [
+        {
+          "text": "خصص. ويجوز أن ينهي الطالب، بموافقة نائب الرئيس للشؤون الأكاديمية بناء على توصية مبررة من عميد الكلية، 9 ساعات على الأكثر من آخر 30 ساعة معتمدة مطلوبة للتخرج في جامعة أخرى تسبق التخرج مباشرة وذلك ضمن الشروط التي تحددها الجامعة للتحويل من جامعة أخرى ولاحتساب العلامات المحولة. ح‌. يعطى الطالب الذي ينهي جميع متطلبات تخصص فرعي إضافي في الجامعة غير المذكور في شهادته الجامعية، بمعدل تراكمي في هذه المساقات لا يقل عن 2.00، شهادة مصدقة وموقعة من مدير التسجيل والقبول بهذا الخصوص شريطة ان يكون حاصلاً على درجة البكالوريوس من جامعة بيرزيت. 2. شروط منح درجة البكالوريوس الثانية لا يجوز للطالب الحصول على شهادتي بكالوريوس في نفس الوقت من الجامعة وفي حالة استوفى الطالب جميع متطلبات تخصص آخر، فيكتب على كشف علاماته أنه أنهى متطلبات ذلك التخصص بالإضافة إلى التخصص الأول. ويحق للطالب الالتحاق بالجامعة للحصول على درجة بكالوريوس ثانية بعد التخرج شريطة المحافظة على معدل تراكمي لا يقل عن 2.00 في مساقات الدرجة الثانية حسب ما تنص عليه الأنظمة الأكاديمية، وأن لا يكون قد مضى على حصوله على درجة البكالوريوس الأولى أكثر",
+          "source": "أنظمة وتعليمات منح درجة البكالوريوس.txt",
+          "page": 1,
+          "distance": 0.28228288888931274,
+          "rerank_score": 0.6415161222219468
+        },
+        {
+          "text": " بموجب الخطة الدراسية الحد الأدنى للساعات المعتمدة المطلوبة للبرنامج* 4 120 5 150 6 180 *يكون الحد الأعلى لعدد الساعات المعتمدة المطلوبة للبرامج الجديدة بحد اقصى 10% عن الحد الأدنى أعلاه، والزيادة على ذلك تحتاج الى موافقة مجلس الجامعة. ب‌. الحصول على معدل تراكمي لا يقل عن 2.00. ت‌. إتمام ما لا يقل عن 120 ساعة عمل تعاوني. ث‌. يعطى الطالب مدة أربعة شهور من تاريخ التخرج لإتمام ساعات العمل التعاوني، وفي حال تجاوز تلك الفترة وبما لا يتعارض مع تعليمات مدة الاحتفاظ بالشهادات (البند 5 أدناه من المادة الخامسة عشرة)، يستطيع الطالب استلام شهادته بعد انهاء العمل التعاوني واستكمال النموذج المطلوب مقابل رسوم إضافية. ج‌. على الطلبة المنتقلين من جامعات أخرى أو طلبة جامعة بيرزيت الذين يدرسون بعض المساقات في جامعات أخرى، إنهاء ما لا يقل عن 40% من الساعات المعتمدة المطلوبة للتخرج في جامعة بيرزيت نفسها تشمل ما لا يقل عن 50% من الساعات المعتمدة من متطلبات التخصص. ويجوز أن ينهي الطالب، بموافقة نائب الرئيس للشؤون الأكاديمية بناء على توصية مبررة من عميد الكلية، 9 ساعات على الأكثر من آخر 30 ساعة معتمدة مطلوبة ",
+          "source": "أنظمة وتعليمات منح درجة البكالوريوس.txt",
+          "page": 1,
+          "distance": 0.24398481845855713,
+          "rerank_score": 0.6080765346686046
+        },
+        {
+          "text": "ين في كليات أو برامج اخرى) بحيث تكون منسجمة مع شروط الالتحاق بالكلية أو البرنامج ويتم اعتماد تلك الشروط في مجلس الكلية ويجب الإعلان عنها قبل شهر من بدء الفصل الدراسي الذي ستطبق فيه. ب‌. في حالة قبول طالب في كلية معينة (أو تخصص معين في حالة القبول المباشر)، فإنه لا يجوز له التحويل إلى كلية أخرى أو إلى تخصص آخر قبل إنهاء 30 ساعة معتمدة بنجاح في الكلية التي تم قبوله فيها. ويعتمد قبول الطالب في الكلية/التخصص المراد التحويل إليها على قدرتها الاستيعابية وعلى مدى استيفائه لشروط تلك الكلية لقبول الطلبة المحولين. ت‌. بالرغم مما ورد أعلاه، يسمح للطالب خلال سنته الأولى في الجامعة (فصلين دراسيين ودورة صيفية) أن يتقدم بطلب تحويل إلى كلية أخرى أو إلى تخصص آخر إذا كان معدله في شهادة الدراسة الثانوية العامة في سنة التحاقه بالجامعة يسمح بقبوله في ذلك التخصص أو الكلية، وفي هذه الحالة يتم التحويل على أساس معدله في شهادة الدراسة الثانوية العامة، مع الاخذ بالاعتبار اعداد الطلبة المخطط قبولهم في الكلية/التخصص في الفصل المعني. المادة الخامسة: العبء الدراسي 1. يحدد العبء الدراسي للطالب النظامي المتفرغ بـ 12 س",
+          "source": "أنظمة وتعليمات منح درجة البكالوريوس.txt",
+          "page": 1,
+          "distance": 0.3493713140487671,
+          "rerank_score": 0.5979086458683014
+        },
+        {
+          "text": " 150 ساعة معتمدة أو أكثر 2. الطلبة غير النظاميين: وهم الطلبة الذين يلتحقون بالجامعة بهدف دراسة بعض المساقات أو الاستماع إليها، ويصنفون في الفئات التالية: أ‌. طلبة زائرون: وهم خريجو جامعة بيرزيت او طلبة وخريجو جامعات أخرى ويرغبون بدراسة مساقات محددة في الجامعة بغرض الحصول على ساعات معتمدة لا تزيد في مجموعها عن 30 ساعة ويتم منحهم فقط كشف علامات بالمساقات التي درسوها. ب‌. طلبة البرامج الدولية: وهم الطلبة الوافدون لدراسة برنامج محدد لمدة فصل أو عام ويمنح الطالب فقط كشف علامات بالمساقات التي درسها. ت‌. طلبة مستمعون: وهم الطلبة الذين يرغبون فقط بالاستماع إلى مساقات محددة في الجامعة بهدف الإفادة الذاتية ويجب الحصول على موافقة العميد قبل قبولهم كمستمعين. يمنح هؤلاء الطلبة وثائق متعلقة بالمساقات التي استمعوا إليها. المادة الرابعة: شروط الالتحاق والتحويل 1. شروط الالتحاق بتخصص معين (لطلبة القبول غير المباشر): أ‌. يحدد كل برنامج أكاديمي شروط الالتحاق به على أن تكون قابلة للتحقيق خلال فترة ثلاثة فصول من بداية دراسة الطالب، ويتم اعتماد شروط الالتحاق بالبرامج في مجلس الكلية. ب‌. يتوجب على الطالب الن",
+          "source": "أنظمة وتعليمات منح درجة البكالوريوس.txt",
+          "page": 1,
+          "distance": 0.26019811630249023,
+          "rerank_score": 0.5975378910700481
+        }
+      ],
+      "retrieval_source_coverage": true,
+      "retrieval_pass": null,
+      "faithfulness_pass": null,
+      "citation_format_pass": true,
+      "citation_accuracy_pass": null,
+      "abstention_pass": null,
+      "notes": ""
+    },
+    {
+      "id": "Q03",
+      "question": "ما الحد الأدنى للمعدل التراكمي للتخرج من جامعة بيرزيت؟",
+      "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": "Q04",
+      "question": "ما الحد الأقصى للساعات في الدورة الصيفية لطلبة بيرزيت؟",
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h8m43.968322914s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '76123s'}]}}"
+    },
+    {
+      "id": "Q05",
+      "question": "هل تطرح الجامعة العربية الأمريكية تخصص الأمن السيبراني؟",
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h8m43.133126424s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '76123s'}]}}"
+    },
+    {
+      "id": "Q06",
+      "question": "إذا معدلي التراكمي في بيرزيت نزل عن 2، شو ممكن يصير؟",
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h8m42.317796151s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '76122s'}]}}"
+    },
+    {
+      "id": "Q07",
+      "type": "paraphrase",
+      "question": "في بيرزيت، إذا بدي أسحب مادة بعد التعديل، هل بتأثر على معدلي؟",
+      "gold_answer": "الانسحاب الرسمي خلال المدة المسموحة يظهر W ولا يدخل المعدل؛ WF يدخل كرسوب.",
+      "gold_sources": [
+        "أنظمة وتعليمات"
+      ],
+      "actual_answer": "إذا قمت بالانسحاب من مساق بعد انتهاء فترة تعديل التسجيل وحتى آخر يوم تدريس في الفصل (أو قبل موعد الامتحان النهائي في حال عقد امتحان مسبق) وفق الإجراءات والموافقات الرسمية المطلوبة:\n\n- **لا يؤثر على معدلك التراكمي**؛ حيث يظهر المساق في سجلك الأكاديمي بعلامة \"منسحب (W)\"، وهي علامة لا تدخل في حساب المعدل التراكمي [S4].\n\nأما إذا لم تستكمل الإجراءات والموافقات المحددة لذلك رسمياً، فستُعتبر مستنكفاً وتحصل على علامة \"منسحب برسوب (WF)\" [S2]، [S4].",
+      "retrieved_chunks": [
+        {
+          "text": "ن جامعة بيرزيت أو من غيرها من الجامعات المعتمدة. ب‌. كما تمنح الجامعة الدبلوم للطلبة المسجلين في برنامج أكاديمي يؤدي إلى درجة البكالوريوس في حقل تخصص يدرس في المدارس. ت‌. على الطلبة استيفاء المتطلبات الخاصة التي تحددها الدائرة الأكاديمية المختصة. ث‌. على الطالب انهاء المتطلبات خلال 8 فصول 4. تقدير الدرجة العلمية يعتمد تقدير نتائج الطالب الذي أتم متطلبات الحصول على درجة البكالوريوس على معدله التراكمي في جميع المساقات التي درسها في الجامعة ويحدد كما يلي: التقدير من -الى امتياز عال 3.8 – 4 امتياز 3.65– 3.79 جيد جدا 3 – 3.64 جيد 2.33 – 2.99 مقبول 2 – 2.32 5. مدة الاحتفاظ بالشهادات تحتفظ الجامعة بالشهادات لمدة لا تتجاوز خمس سنوات من تاريخ التخرج ويمكن للطالب الذي أتم متطلبات التخرج الحصول على شهادته بعد تقديم النموذج الخاص بذلك خلال تلك المدة. إذا لم يستلم الطالب شهادته خلال السنوات الخمس تلك، فيمكنه الحصول عليها لاحقاً بعد تقديم النموذج الخاص بذلك مقابل رسوم إضافية ويتم توقيع الشهادة من قبل المسؤولين القائمين على رأس عملهم في الجامعة في حينه. تصدر القرارات اللازمة لتطبيق هذه التعليمات وتعد",
+          "source": "أنظمة وتعليمات منح درجة البكالوريوس.txt",
+          "page": 1,
+          "distance": 0.31643134355545044,
+          "rerank_score": 0.5609862933556239
+        },
+        {
+          "text": "ه على علامة \"منسحب \" (W). وتحسب الساعات المعتمدة للمساق المعاد مرة واحدة فقط وتدخل في سجل الطالب وفي معدله التراكمي العلامة الأعلى. وتستثنى متطلبات الجامعة من الحد الأعلى لعدد مرات الإعادة. كما تؤخذ بعين الاعتبار المادة (11/2/ت) المتعلقة بتكرار الرسوب في مساق اجباري للتخصص او من متطلبات الكلية. ث‌. التعديل على البرنامج الفصلي: يجوز للطلبة إجراء بعض التعديلات على برامجهم خلال فترة \"تعديل التسجيل\" المحددة في التقويم الأكاديمي المعلن لكل فصل دراسي. بينما يقتصر تعديل برامج طلبة السنة الأولى على تغيير مواعيد مساقاتهم. ولا يجوز إجراء أية تعديلات على برامج جميع الطلبة بعد انتهاء فترة \"تعديل التسجيل\" عدا الانسحاب من مساقات بموجب المادة السابعة أدناه. المادة السابعة: الانسحاب من المساقات 1. الانسحاب من مساق أو أكثر هو إجراء رسمي يجب أن يستكمله الطالب وفق الإجراءات المحددة لذلك، مع مراعاة الحصول على الموافقات المطلوبة له بموجب هذه الأنظمة، وإلاّ أُعتبر مستنكفاً[2] فيحصل على علامة \"منسحب برسوب[3](WF) \". ويستطيع الطالب الانسحاب من مساق (أو مساقات) بعد انتهاء فترة تعديل التسجيل وحتى آخر يوم تدريس ف",
+          "source": "أنظمة وتعليمات منح درجة البكالوريوس.txt",
+          "page": 1,
+          "distance": 0.2763395309448242,
+          "rerank_score": 0.548157082663642
+        },
+        {
+          "text": "عدل تعطى قيمة عددية لكل علامة بالحروف حسب الجدول ادناه، ويكون المعدل التراكمي او الفصلي هو مجموع حاصل ضرب عدد الساعات المعتمدة للمساق في القيمة العددية لعلامة المساق مقسوما على مجموع الساعات المعتمدة التي درسها الطالب وتدخل في احتساب المعدل ومقربا الى منزلتين عشريتين (Rounding) ويكون المعدل من 4 يدخل في احتساب المعدل التراكمي جميع المساقات التي يدرسها الطالب في جامعة بيرزيت، ولا تدخل المساقات التي لا يحتسب لها ساعات معتمدة او التي تكون نتائجها النهائية على شكل ناجح (P)/راسب (F) في احتساب المعدل التراكمي او الفصلي للطالب. العلامة القيمة العددية العلامة القيمة العددية A+ 4.00 C 2.50 A 4.00 C- 2.25 A- 3.75 D+ 2.00 B+ 3.50 D 1.75 B 3.25 D- 1.5 B- 3.00 F 0 C+ 2.75 3) في حالة تحويل الطالب بين برامج بكالوريوس مختلفة بالجامعة، يحسب المعدل التراكمي على ضوء التحديدات التالية: أ‌. جميع المساقات التي درسها الطالب قبل التحويل وتظهر في خطة البرنامج الجديد بعد التحويل تدخل في احتساب المعدل التراكمي. ب‌. المساقات التي درسها الطالب وتظهر في خطة البرنامج الجديد ضمن المساقات الاختيارية الحرة، يحق للطالب ",
+          "source": "أنظمة وتعليمات منح درجة البكالوريوس.txt",
+          "page": 1,
+          "distance": 0.27975666522979736,
+          "rerank_score": 0.5459359453784095
+        },
+        {
+          "text": "عتبر مستنكفاً[2] فيحصل على علامة \"منسحب برسوب[3](WF) \". ويستطيع الطالب الانسحاب من مساق (أو مساقات) بعد انتهاء فترة تعديل التسجيل وحتى آخر يوم تدريس في الفصل (أو قبل موعد الامتحان النهائي في حال عقد امتحان نهائي مسبق) فإذا انسحب الطالب من مساق خلال هذه الفترة يظهر المساق في سجله الأكاديمي بعلامـة \"منسحب (W) \" التي لا تدخل في حساب معدله التراكمي. 2. لا يعفى الطالب المنسحب من المساق بعد انتهاء فترة تعديل التسجيل من أي من التزاماته المالية للجامعة. 3. يستطيع الطالب الانسحاب من مساقات متطلبات الجامعة في اللغة الإنجليزية مرتين على الأكثر خلال دراسته، ويجب على الطالب الذي لم ينه أي من هذه المساقات التسجيل في المساق المطلوب منه حسب مستواه في كل فصل دراسي له في الجامعة. 4. لا يسمح للطالب بالانسحاب من مساقات في الحالات التي يؤدي فيها الانسحاب إلى تحول الطالب إلى غير متفرغ أو إلى أن يقل عدد ساعات التخصص المتبقية لذلك الفصل عن 6 ساعات إلا إذا حصل على موافقة من عميد كليته. المادة الثامنة: الانسحاب من الجامعة الانسحاب من الجامعة هو إجراء رسمي يجب أن يستكمله الطالب وفق الإجراءات المحددة تالياً وإلاّ",
+          "source": "أنظمة وتعليمات منح درجة البكالوريوس.txt",
+          "page": 1,
+          "distance": 0.3094289302825928,
+          "rerank_score": 0.5266489730940924
+        }
+      ],
+      "retrieval_source_coverage": true,
+      "retrieval_pass": null,
+      "faithfulness_pass": null,
+      "citation_format_pass": true,
+      "citation_accuracy_pass": null,
+      "abstention_pass": null,
+      "notes": ""
+    },
+    {
+      "id": "Q08",
+      "question": "مين بيقوم بإرشاد الطالب المتخصص في جامعة بيرزيت؟",
+      "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": "Q09",
+      "question": "اذكر تخصصاً في دليل الجامعة العربية الأمريكية، ثم اذكر الحد الأدنى للمعدل التراكمي للتخرج حسب لوائح جامعة بيرزيت. وضّح أن الجامعتين مختلفتان.",
+      "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": "Q10",
+      "question": "كم رسوم الساعة المعتمدة لتخصص الأمن السيبراني في الجامعة العربية الأمريكية للعام 2026؟",
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h4m18.037927897s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '75858s'}]}}"
+    },
+    {
+      "id": "Q11",
+      "question": "ما هو رقم الهاتف الشخصي لرئيس قسم التسجيل الحالي في جامعة بيرزيت؟",
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h4m17.225365032s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '75857s'}]}}"
+    },
+    {
+      "id": "Q12",
+      "question": "هل صحيح أن طالب الجامعة العربية الأمريكية تحت التحذير الأكاديمي مسموح له 9 إلى 13 ساعة بحسب دليلها المرفق؟",
+      "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    }
+  ]
+}

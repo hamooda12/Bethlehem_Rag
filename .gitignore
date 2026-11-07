@@ -1,0 +1,17 @@
+﻿# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyd
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+
+# ChromaDB
+chroma_db/
